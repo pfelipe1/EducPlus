@@ -1,0 +1,41 @@
+<div class="user_datas">
+    <img src="../img/userIcon.png">
+    <h2>{{user.nome}}</h2>
+
+    <div class="users_btn_atualizar">
+        <a href="/users/update/{{user.id}}">
+            Atualizar
+        </a>
+    </div>
+
+
+    <form action="/users/delete/{{user.id}}" method="post">
+
+        <div class="users_btn_remover">
+
+            <input type="submit" value="Remover">
+            </input>
+
+        </div>
+
+    </form>
+
+</div>
+
+
+<p>Email: {{user.email}}</p>
+<p>Ocupação: {{user.ocupacao}}</p>
+
+
+Experiencia:
+
+{{#if user.Experiencies}}
+{{#each user.Experiencies}}
+<p># {{this.id}} - {{this.cargo}} - {{this.empresa}} - R${{this.salario}},00</p>
+{{/each}}
+
+{{else}}
+<h4>... não há experiencia</h4>
+<a href="/exp/create/{{user.id}}"><button>Adcionar experiencia</button></a>
+
+{{/if}}

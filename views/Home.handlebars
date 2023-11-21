@@ -1,0 +1,48 @@
+
+
+<div class="btn_cadastrar_home">
+    <a href="/users/create">+</a>
+</div>
+
+  <h3 id="avisoLogin" style="color: black;">VOCE NAO ESTÁ LOGADO(A), CLIQUE EM LOGIN PARA SABER MAIS</h2>
+  
+  
+  <div class="container" id="containerP1">
+    <h1>AULAS EM PDF</h1>
+   <p>TENHA ACESSO A DIVERSAS AULAS PARA ESTUDOS</p>
+  </div>
+  <div class="container" id="containerP2">
+    <h1>PROVAS</h1>
+   <p>FAÇA DIVERSAS PROVAS PARA TESTAR SEU CONHECIMENTO</p>
+  </div>
+  <div class="container" id="containerP3">
+    <h1>SUPORTE 24 HORAS</h1>
+    <p>SUPORTE ONLINE 24 HORAS POR DIA PARA RESPONDER SUAS DÚVIDAS</p>
+  </div>
+    <div class="container" id="containerP4">
+   <h1>PAGINA DE PERFIL</h1>
+   <p>ACESSE O MENU PERFIL E VEJA SEUS DADOS</p>
+  </div>
+<br> <br>
+<div id="menu">
+<center>
+    <h2>NOSSOS ALUNOS</h2>
+</center>
+
+</div>
+ <br>
+
+{{#if candidatos}}
+<div class="container_cands">
+    {{#each candidatos}}
+    {{> cands}}
+    {{/each}}
+</div>
+{{else}}
+<div style="text-align: center;">
+    <h1>Não há alunos... </h1>
+    <a href="/">
+        <h3 style="color: black;">Alunos cadastrados aparecerão</h3>
+    </a>
+</div>
+{{/if}}

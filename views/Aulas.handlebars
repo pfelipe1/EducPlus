@@ -1,0 +1,49 @@
+
+    <div class="container2">
+        <h1>Qual aula você deseja assistir:</h1>
+
+        <h2>Português</h2>
+        <div class="atividade">
+            <p>Aulas de Português</p>
+            <p class="mostrar-solucao">Mostrar aulas de Português</p>
+           <div class="solucao"><a href="/aula1-his">Aula 1 - Português</a></div>
+        </div>
+
+        <h2>Matemática</h2>
+        <div class="atividade">
+            <p>Aulas de Matemática</p>
+            <p class="mostrar-solucao">Mostrar aulas de Matemática</p>
+           <div class="solucao"><a href="/aula1-his">Aula 1 - Matemática</a></div>
+        </div>
+
+        <h2>Biologia</h2>
+        <div class="atividade">
+            <p>Aulas de Biologia</p>
+            <p class="mostrar-solucao">Mostrar aulas de Biologia</p>
+            <div class="solucao"><a href="/aula1-his">Aula 1 - Biologia</a></div>
+        </div>
+
+        <h2>História</h2>
+        <div class="atividade">
+            <p>Aulas de História</p>
+            <p class="mostrar-solucao">Mostrar aulas de Historia</p>
+            <div class="solucao"><a href="/aula1-his">Aula 1 - História</a></div>
+        </div>
+
+
+        <script>
+            // JavaScript para mostrar ou ocultar as soluções ao clicar em "Mostrar Solução"
+            const mostrarSolucaoElements = document.querySelectorAll('.mostrar-solucao');
+            
+            mostrarSolucaoElements.forEach(mostrarSolucaoElement => {
+                mostrarSolucaoElement.addEventListener('click', function() {
+                    const solucaoElement = this.nextElementSibling;
+                    if (solucaoElement.style.display === 'none') {
+                        solucaoElement.style.display = 'block';
+                    } else {
+                        solucaoElement.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </div>

@@ -1,0 +1,50 @@
+
+<div class="container2">
+        <h1>Cursos Oferecidos
+        </h1>
+
+            <h2>Curso de Português</h2>
+        <div class="atividade">
+            <p>Curso para português</p>
+            <p class="mostrar-solucao">Mostrar descrição do curso</p>
+            <div class="solucao">
+                Bem-vindo ao nosso curso abrangente de Língua Portuguesa, 
+                uma jornada educacional projetada para aprimorar seus conhecimento em português. Este curso é cuidadosamente 
+                elaborado para beneficiar estudantes de todos os níveis, desde iniciantes 
+                até aqueles que buscam aperfeiçoar sua proficiência. <br> <br>
+                Aulas: <a href="#">EM BREVE</a>
+            </div>
+        </div>
+
+        <h2>Curso de Matemática</h2>
+        <div class="atividade">
+            <p>Curso para matemática</p>
+            <p class="mostrar-solucao">Mostrar descrição do curso</p>
+            <div class="solucao">
+                Bem-vindo ao nosso curso abrangente de Matemática, 
+                uma jornada educacional projetada para aprimorar seus conhecimento em matemática. Este curso é cuidadosamente 
+                elaborado para beneficiar estudantes de todos os níveis, desde iniciantes 
+                até aqueles que buscam aperfeiçoar sua proficiência. <br> <br>
+                Aulas: <a href="#">EM BREVE</a>
+            </div>
+        </div>
+
+     
+        <script>
+            // JavaScript para mostrar ou ocultar as soluções ao clicar em "Mostrar Solução"
+            const mostrarSolucaoElements = document.querySelectorAll('.mostrar-solucao');
+            
+            mostrarSolucaoElements.forEach(mostrarSolucaoElement => {
+                mostrarSolucaoElement.addEventListener('click', function() {
+                    const solucaoElement = this.nextElementSibling;
+                    if (solucaoElement.style.display === 'none') {
+                        solucaoElement.style.display = 'block';
+                    } else {
+                        solucaoElement.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </div>
+
+

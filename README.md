@@ -9,7 +9,7 @@ O "Educ+" é um site educacional inovador que visa proporcionar uma experiência
 <P>
 O "Educ+" tem o objetivo claro de transformar a experiência de aprendizado dos alunos. Nosso principal propósito é oferecer uma educação personalizada e abrangente, adaptada às necessidades individuais de cada estudante.</P>
 <h2> COMO INICIAR O PROJETO</h2>
-1) Crie uma pasta vazia 
-2) Com o git instalado, clique em "Git Bash Here"
-3) Com a pasta selecionada, digite "git clone https://github.com/pfelipe1/EducPlus.git"
+1) Crie uma pasta vazia <br>
+2) Com o git instalado, clique em "Git Bash Here" <br>
+3) Com a pasta selecionada, digite "git clone https://github.com/pfelipe1/EducPlus.git" <br>
 4) Inicie o projeto no visual code
